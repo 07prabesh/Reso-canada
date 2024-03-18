@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+
 }
+
+
+
+
 html {
   scroll-behavior: smooth !important;
 }
@@ -11,6 +20,7 @@ a {
   text-decoration: none;
   color: #000;
 }
+
 a:hover {
   color: #000;
   text-decoration: 2px underline;
@@ -30,6 +40,12 @@ a:hover {
   color: #000;
   
 }
+
+
+
+
+
+
 .hero-video{
   /* clip-path: polygon(0 0, 90% 0, 100% 100%, 0 90%); */
   border-top-left-radius: 99px;
@@ -107,15 +123,35 @@ a:hover {
   font-size: 0.85rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 .btn-register{
-  background-color: #f00 !important;
+  background-color: black !important;
   color: white !important;
   text-decoration: none !important;
+  padding: 12px 10px !important;
+  /* width: fit-content !important; */
+  font-size: .8rem !important;
 }
+
+
 .btn-register:hover{
-  background-color: #f00 !important;
-  color: white !important;
+  background-color:#212529 !important;
+  /* color: white !important; */
   text-decoration: none !important;
+  color: #fff !important; /* Text color on hover */
+    /* background-color: #212529;  */
+    border-color: #212529 !important; 
+ 
 }
 .rarr{
   color: white !important;
@@ -177,7 +213,6 @@ textarea:active, textarea:focus{
 
 
 
-
 .footsep{
   filter: brightness(0);
   opacity: 0.5;
@@ -193,7 +228,7 @@ textarea:active, textarea:focus{
 .nav-small:hover .nav-small:active .nav-small:focus{
   border: none !important;
   outline: none !important;
-    color: black;
+    color: black;   
     fill: black;
     box-shadow: none !important;
 }
@@ -218,6 +253,12 @@ textarea:active, textarea:focus{
   font-size: 1.2rem !important;
   font-weight: 500 !important;
 }
+
+.small-img-text{
+  font-size: 9px !important;
+}
+
+
 }
 
 ul{
@@ -264,10 +305,12 @@ ul{
   text-decoration: none !important;
 }
 .clients{
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .clients img {
+  width:135px;
+  
   transition: all 0.3s ease-in-out;
   display: inline-block;
   filter: grayscale(100);
@@ -295,6 +338,70 @@ ul{
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+
+
+
+
+
+/* card */
+
+.card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+
+  
+
+}
+
+
+
+.card img {
+  max-width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: contain;
+  height: 15vh;
+  
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h2 {
+  color: #333;
+  font-size: 20px;
+}
+
+.card p {
+  color: #666;
+  object-fit: contain;
+  
+}
+
+
+
+
+.image{
+  width:80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.image img {
+  width: 100%;
+  height: auto;
+}
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-5px); 
+  transition: box-shadow 0.3s ease, transform 0.3s ease; 
 }
 
 
@@ -365,7 +472,9 @@ font-size: 16px;
 
 /*rounded image */
 
-
+.rounded-circle-img{
+  object-fit:fill
+}
 
 
 
@@ -375,9 +484,9 @@ font-size: 16px;
   color:black;
   font-size: 30px;
   font-weight: 600;
-  text-decoration-line: underline;
-  text-decoration-color: #F00;
-  text-decoration-thickness: 4px;
+  /* text-decoration-line: underline;
+  text-decoration-color: #F00; */
+  /* text-decoration-thickness: 4px; */
  
   text-align: center;
  
@@ -405,14 +514,14 @@ font-size: 16px;
 .rounded-text-div{
   border-radius: 10px;
   align-items: center;
-
-
-
 text-align: center; 
 display: flex;
 justify-content: center;
   
 }
+
+
+
 
 
 .rounded-text-div p{
@@ -426,6 +535,45 @@ justify-content: center;
 }
 
 
+/* testimonial */
 
 
 
+
+
+
+.ratings i{
+  color:#fDCC0D
+
+}
+
+/* faq */
+
+.accordion-item {
+  border-left: 0 !important;
+  border-right: 0 !important;
+  padding: 6px !important;
+}
+
+.accordion-item, .accordion-button {
+  border-radius: 0 !important;
+}
+
+  .accordion-button:focus {
+    background-color:transparent !important; 
+    box-shadow: none !important; 
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color:transparent !important; 
+    color: #000000 !important;  
+  }
+  
+  .accordion-button:not(.collapsed):hover, .accordion-button:not(.collapsed):focus {
+    background-color:transparent !important; 
+    border-color: #ced4da !important; 
+  }
+  
+  .accordion-button:hover {
+    background-color: transparent !important; 
+  }
